@@ -116,3 +116,56 @@ You can find the latest releases of the Console To-Do App [here](https://github.
 The Console To-Do App is a simple yet powerful tool for managing tasks in your daily life. It serves as a great starting point for those new to C++ and OOP concepts. With its user-friendly interface and straightforward functionality, you can focus on what matters most: getting things done.
 
 Feel free to explore the code, modify it, and use it as a foundation for your own projects. Happy coding!
+
+### Henrique L. Alterations
+
+What changed?
+
+- separated methods in a header and other cpp file to better clarity.
+- fixed some pause erros.
+- added clear terminal to all OS
+- added CMake 
+
+## How to Compile and Run
+
+### On Linux
+
+1. Make sure you have g++ installed:
+   ```bash
+   sudo apt update
+   sudo apt install g++
+   ```
+
+2. Navigate to the project folder:
+   ```bash
+   cd /path/to/unitConverter
+   ```
+
+3. Compile using g++:
+   ```bash
+   g++ -Iinclude main.cpp src/DistanceConverter.cpp src/TemperatureConverter.cpp src/WeightConverter.cpp -o bin/main
+   ```
+
+4. Run the program:
+   ```bash
+   ./bin/main
+   ```
+
+### On Windows (MinGW)
+
+1. Install MinGW and add it to your system PATH.
+
+2. Open the Command Prompt and navigate to your project folder:
+   ```cmd
+   cd C:\path\to\unitConverter
+   ```
+
+3. Compile using g++:
+   ```cmd
+   g++ -Iinclude main.cpp src\DistanceConverter.cpp src\TemperatureConverter.cpp src\WeightConverter.cpp -o bin\main.exe
+   ```
+
+4. Run the program:
+   ```cmd
+   bin\main.exe
+   ```
